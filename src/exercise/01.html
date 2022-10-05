@@ -1,7 +1,25 @@
 <!-- Basic JavaScript-rendered Hello World -->
 <!-- http://localhost:3000/isolated/exercise/01.html -->
 
+<!DOCTYPE html>
+
 <!-- 🐨 Create (in HTML) a <body> with a <div> with the id of "root" -->
+
+<html>
+  <head> </head>
+  <body>
+    <script type="module">
+      const bodyElement = document.getElementsByTagName('body')[0]
+      const rootNode = document.createElement('div')
+      rootNode.setAttribute("id") = 'root'
+      const div = document.createElement('div')
+      div.className = 'container'
+      div.textContent = 'Hello World'
+      bodyElement.appendChild(rootNode)
+      rootNode.appendChild(div)
+    </script>
+  </body>
+</html>
 <!-- 🐨 Then create a <script type="module"> for your JavaScript -->
 <!--   📜 https://developer.mozilla.org/en-US/docs/Web/HTML/Element/script#attributes -->
 <!--   📜 https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules -->
